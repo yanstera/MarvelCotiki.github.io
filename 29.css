@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Neucha|Philosopher');
+
+body{
+	font-family: 'Philosopher', sans-serif;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+.container{
+	height:650px;
+	display:flex;
+}
+.menu{
+	position:relative;
+	width:270px;
+	
+}
+.name{
+	position:relative;
+	flex-grow:1;
+	overflow:hidden;
+	background-image: url(https://denis-creative.com/wp-content/uploads/2018/01/about-header-bg.png), url(https://denis-creative.com/wp-content/uploads/2018/01/about-footer-bg.png);
+		background-repeat:no-repeat;
+	background-position:top, bottom;
+	background-color:rgba(123, 163, 175, 0.5);
+	display:flex;
+	padding-top:160px;
+	padding-left:150px;
+	font-size:50pt;
+}
+.menu ul{
+	list-style:none;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	height:100%;
+	flex-direction:column;
+}
+.vide_container{
+	position:absolute;
+	height:100%;
+	width:100%;
+	overflow:hidden;
+	top:0px;
+	left:0px;
+	z-index:-1;
+	
+}
+.menu li{
+	position:relative;
+}
+.back_video{
+	min-width:100%;
+	min-height:100%;
+}
+.character_img{
+	padding:15px;
+	transform:scale(1);
+	transition:transform 1s linear;
+	}
+.character_img:hover{
+	transform:scale(1.5);
+}
+.character_about{
+	position:absolute;
+	top:0;
+	left:0;
+	opacity:0;
+	width:300px;
+	height:120px;
+	padding:15px;
+	color:#bee8fd;
+	background-color:#0916cd;
+	border-radius:0 0 200px 0;
+	box-shadow:2px  2px 5px 2px black;
+	transition:opacity 1s linear, left 1s linear;
+	
+	}
+.character_about:hover{
+	opacity:1;
+	left:200px;
+}
+.name_animated{
+	position:relative;
+	display:flex;
+	color:red;
+	text-shadow:-2px -2px 1px black,
+	2px 2px 1px yellow;
+	padding:10px;
+}
+.name_animated div{
+position:absolute;
+transform:scale(1);
+animation:nemo 2s linear;
+			right:0;
+			top:0;
+			opacity:1;
+			left:0;
+}
+	@keyframes nemo{
+		0%{
+			transform:scale(1);
+			right:0;
+			top:0;
+		opacity:1;
+		left:0;
+		}
+		50%
+		{
+			transform:scale(1.5);
+			right:50px;
+			left:0;
+			top:50px;
+			opacity:0.5;
+		}
+	100%
+	{
+		transform:scale(1.5);
+			right:50px;
+			left:0;
+			top:50px;
+			opacity:0.5;
+		
+	}
+	}
+	
